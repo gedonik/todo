@@ -1,0 +1,140 @@
+.todo {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, blue, pink);
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 7px;
+  }
+
+  &__field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 30px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border-color: var(--bg-btn);
+  }
+
+  &__field--btn {
+    padding: 5px 15px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    background-color: var(--bg-btn);
+    color: #fff;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+      color 0.3s ease-in-out;
+
+    &:hover {
+      border-color: var(--bg-btn);
+      background-color: var(--light-color);
+      color: var(--bg-btn);
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 15px;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    background-color: rgb(237, 174, 238);
+  }
+
+  &__text {
+    max-width: 285px;
+    width: 100%;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  &__btns-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: #fff;
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
+
+  &__manage {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__sum {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__manage--btn {
+    padding: 5px 15px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    background-color: var(--bg-btn);
+    color: #fff;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+      color 0.3s ease-in-out;
+
+    &:hover {
+      border-color: var(--bg-btn);
+      background-color: var(--light-color);
+      color: var(--bg-btn);
+    }
+  }
+}
